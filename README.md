@@ -86,7 +86,7 @@ struct Lobby {
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/Vikash-8090-Yadav/QuizDapp
 cd QuizDapp/SamrtContract
 ```
 
@@ -106,33 +106,15 @@ npx hardhat compile
 
 Run the comprehensive test suite:
 ```bash
-npm test
-# or
-yarn test
+npx hardhat test test/QuizCraftArena.test.js
+
 ```
 
 Run the demo test runner:
 ```bash
-npm run test:demo
-# or
-yarn test:demo
+npx hardhat test --grep "QuizCraftArena" 
 ```
 
-### Deployment
-
-Deploy to Conflux eSpace:
-```bash
-npm run deploy
-# or
-yarn deploy
-```
-
-Deploy to local Hardhat network:
-```bash
-npm run deploy:local
-# or
-yarn deploy:local
-```
 
 ## 📊 Test Results
 
@@ -147,6 +129,9 @@ The smart contract includes 26 comprehensive test cases covering:
 - ✅ Edge cases and error handling
 
 **Test Status**: 26 passing (666ms)
+
+<img width="1494" height="904" alt="Screenshot 2025-09-17 at 05 50 56" src="https://github.com/user-attachments/assets/24a2e54d-8214-42ca-9a8e-0cace76d31f6" />
+
 
 ## 🔍 Usage Examples
 
@@ -205,14 +190,6 @@ The contract emits the following events for transparency:
 - Only lobby creators can execute winner payouts
 - Creators cannot join their own lobbies
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Ensure all tests pass
-6. Submit a pull request
 
 ## 📄 License
 
